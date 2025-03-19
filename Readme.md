@@ -23,6 +23,8 @@ Stylish UI: A visually appealing black and yellow theme with a glowing effect
 Folder Structure
 
 Calculator-Project/
+
+
 │── index.html         # HTML file for the calculator structure
 │── style.css          # CSS file for styling the calculator
 │── script.js          # JavaScript file for calculator functionality
