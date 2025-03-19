@@ -26,8 +26,11 @@ Calculator-Project/
 
 
 │── index.html         # HTML file for the calculator structure
+
 │── style.css          # CSS file for styling the calculator
+
 │── script.js          # JavaScript file for calculator functionality
+
 │── README.md          # Project documentation
 
 How to Run the Project
