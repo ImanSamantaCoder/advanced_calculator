@@ -1,0 +1,130 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+/* Title Styling */
+h1 {
+    color: yellow;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(255, 223, 0, 0.8);
+}
+
+/* Calculator Container */
+.calculator {
+    width: 300px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #222;
+    box-shadow: 0px 0px 15px rgba(255, 223, 0, 0.8);
+}
+
+/* Display Screen */
+#display {
+    width: 100%;
+    height: 50px;
+    font-size: 24px;
+    text-align: right;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: yellow;
+    outline: none;
+    box-shadow: inset 0px 0px 5px rgba(255, 223, 0, 0.8);
+}
+
+/* Buttons Grid */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 15px;
+}
+
+/* Button Styling */
+button {
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+/* Number and Decimal Buttons */
+button:not(.operator):not(.clear):not(.equal):not(.memory):not(.trig) {
+    background-color: #333;
+    color: yellow;
+}
+
+button:not(.operator):not(.clear):not(.equal):not(.memory):not(.trig):hover {
+    background-color: #444;
+}
+
+/* Operator Buttons */
+.operator {
+    background-color: yellow;
+    color: black;
+}
+
+.operator:hover {
+    background-color: #ffcc00;
+}
+
+/* Special Buttons */
+.clear {
+    background-color: red;
+    color: white;
+}
+
+.clear:hover {
+    background-color: darkred;
+}
+
+.equal {
+    background-color: green;
+    color: white;
+}
+
+.equal:hover {
+    background-color: darkgreen;
+}
+
+/* Memory Buttons */
+.memory {
+    background-color: #555;
+    color: yellow;
+}
+
+.memory:hover {
+    background-color: #666;
+}
+
+/* Trigonometric Buttons */
+.trig {
+    background-color: #444;
+    color: yellow;
+}
+
+.trig:hover {
+    background-color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    .calculator {
+        width: 100%;
+        max-width: 280px;
+    }
+}
